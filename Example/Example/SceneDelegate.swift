@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.makeKeyAndVisible()
         }
 
-        let test = BenchmarkKit()
+        testBenchmarkMethod()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -61,7 +61,45 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+}
 
+// Example as tmp
 
+extension SceneDelegate {
+    func testBenchmarkMethod() {
+        var optional: Int? = nil
+        let count = 100000
+
+        BenchmarkKit.measure {
+            for i in 0...count {
+                if let _ = optional {
+                    print(i)
+                }
+            }
+        }
+
+        BenchmarkKit.measure {
+            for i in 0...count {
+                if optional != nil {
+                    print(i)
+                }
+            }
+        }
+
+        BenchmarkKit.measureMetrics(automaticallyStartMeasuring: false) { benchmarkKit in
+
+            // Do setup work that needs to be done for every iteration but
+            // you don't want to measure before the call to `startMeasuring()`
+            print("set up")
+            benchmarkKit.startMeasuring()
+
+            // Do that thing you want to measure.
+            print("MyFunction()")
+            benchmarkKit.stopMeasuring()
+
+            // Do teardown work that needs to be done for every iteration
+            // but you don't want to measure after the call to `stopMeasuring()`
+        }
+    }
 }
 
