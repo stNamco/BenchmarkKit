@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035A7B5623B37C2C00FB6D5E /* PerformanceMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A7B5523B37C2C00FB6D5E /* PerformanceMeter.swift */; };
+		035A7B5823B37D6700FB6D5E /* WallClockTimeMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A7B5723B37D6700FB6D5E /* WallClockTimeMetric.swift */; };
+		035A7B5A23B3817400FB6D5E /* PerformanceMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A7B5923B3817400FB6D5E /* PerformanceMetric.swift */; };
 		0382E0CB23B2DC5A00C1AD3F /* BenchmarkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0382E0C123B2DC5A00C1AD3F /* BenchmarkKit.framework */; };
 		0382E0D023B2DC5A00C1AD3F /* BenchmarkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0382E0CF23B2DC5A00C1AD3F /* BenchmarkKitTests.swift */; };
 		0382E0D223B2DC5A00C1AD3F /* BenchmarkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0382E0C423B2DC5A00C1AD3F /* BenchmarkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035A7B5523B37C2C00FB6D5E /* PerformanceMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMeter.swift; sourceTree = "<group>"; };
+		035A7B5723B37D6700FB6D5E /* WallClockTimeMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallClockTimeMetric.swift; sourceTree = "<group>"; };
+		035A7B5923B3817400FB6D5E /* PerformanceMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceMetric.swift; sourceTree = "<group>"; };
 		0382E0C123B2DC5A00C1AD3F /* BenchmarkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BenchmarkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0382E0C423B2DC5A00C1AD3F /* BenchmarkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BenchmarkKit.h; sourceTree = "<group>"; };
 		0382E0C523B2DC5A00C1AD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 			children = (
 				0382E0C423B2DC5A00C1AD3F /* BenchmarkKit.h */,
 				0382E12123B2DDF500C1AD3F /* BenchmarkKit.swift */,
+				035A7B5523B37C2C00FB6D5E /* PerformanceMeter.swift */,
+				035A7B5923B3817400FB6D5E /* PerformanceMetric.swift */,
+				035A7B5723B37D6700FB6D5E /* WallClockTimeMetric.swift */,
 				0382E0C523B2DC5A00C1AD3F /* Info.plist */,
 			);
 			path = BenchmarkKit;
@@ -199,6 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035A7B5A23B3817400FB6D5E /* PerformanceMetric.swift in Sources */,
+				035A7B5623B37C2C00FB6D5E /* PerformanceMeter.swift in Sources */,
+				035A7B5823B37D6700FB6D5E /* WallClockTimeMetric.swift in Sources */,
 				0382E12223B2DDF500C1AD3F /* BenchmarkKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
