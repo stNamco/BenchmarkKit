@@ -85,21 +85,21 @@ public extension BenchmarkKit {
         performanceMeter.stopMeasuring(file: file, line: line)
     }
 
-    func dumpResult(description: String, file: StaticString, line: Int) {
+    func dumpLog(description: String, file: StaticString, line: Int) {
         print("file: \(file), line: \(line), result: \(description)")
     }
 }
 
 extension BenchmarkKit: PerformanceMeterDelegate {
     internal func recordAPIViolation(description: String, file: StaticString, line: Int) {
-        dumpResult(description: description, file: file, line: line)
+        dumpLog(description: description, file: file, line: line)
     }
 
     internal func recordMeasurements(results: String, file: StaticString, line: Int) {
-        dumpResult(description: results, file: file, line: line)
+        dumpLog(description: results, file: file, line: line)
     }
 
     internal func recordFailure(description: String, file: StaticString, line: Int) {
-        dumpResult(description: description, file: file, line: line)
+        dumpLog(description: description, file: file, line: line)
     }
 }
