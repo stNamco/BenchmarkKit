@@ -18,7 +18,7 @@ class DetailViewController: UIViewController, Injectable {
     private let presenter: DetailPresenter
 
     init?(coder: NSCoder, dependency: Dependency) {
-        self.presenter = DetailPresenter()
+        self.presenter = DetailPresenter(dependency: dependency)
         super.init(coder: coder)
     }
 

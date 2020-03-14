@@ -10,8 +10,21 @@ import Foundation
 
 // will implement some logic on this screen. so decided to implement presenter
 
-final class DetailPresenter {
-    init() {
+protocol DetailInput {
 
+}
+
+protocol DetailOutput {
+    var navigationTitle: String { get }
+}
+
+private typealias Presenter = DetailInput & DetailOutput
+
+final class DetailPresenter: Presenter {
+
+    let navigationTitle: String
+
+    init(dependency: DetailViewController.Dependency) {
+        self.navigationTitle = dependency.title
     }
 }
