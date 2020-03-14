@@ -13,7 +13,7 @@ protocol Resource {
 }
 
 class DataSource {
-    func get<T: Resource>(type: T) -> [T] {
+    static func fetch<T: Resource>(type: T.Type) -> [T] {
         return T.fetch()
     }
 }
