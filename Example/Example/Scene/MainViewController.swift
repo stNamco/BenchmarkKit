@@ -44,6 +44,14 @@ extension MainViewController {
 
 extension MainViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        let detail = UIStoryboard(name: "Detail", bundle: .main).instantiateInitialViewController { (coder) -> UIViewController? in
+            return DetailViewController(coder: coder)
+        }
+
+        guard let vc = detail else {
+            return
+        }
+
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
