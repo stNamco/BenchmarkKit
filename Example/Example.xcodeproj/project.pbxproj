@@ -76,12 +76,28 @@
 		0334EE3B241CA80D006CB26A /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				0334EE45241CB89F006CB26A /* Main */,
+				0334EE46241CB8A6006CB26A /* Detail */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		0334EE45241CB89F006CB26A /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				0334EE36241CA357006CB26A /* Main.storyboard */,
 				0334EE38241CA39B006CB26A /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0334EE46241CB8A6006CB26A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
 				0334EE40241CB063006CB26A /* Detail.storyboard */,
 				0334EE42241CB0CD006CB26A /* DetailViewController.swift */,
 			);
-			path = Scene;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		0382E0FB23B2DD8900C1AD3F = {
