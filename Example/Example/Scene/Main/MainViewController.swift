@@ -47,7 +47,7 @@ extension MainViewController {
         let subject = data[indexPath.row]
 
         let detail = UIStoryboard(name: "Detail", bundle: .main).instantiateInitialViewController { (coder) -> UIViewController? in
-            return DetailViewController(coder: coder, dependency: DetailViewController.Dependency(title: subject.title, description: subject.description))
+            return DetailViewController(coder: coder, dependency: DetailViewController.Dependency(title: subject.title, description: subject.description, code: subject.code))
         }
 
         guard let vc = detail else {
