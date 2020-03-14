@@ -29,6 +29,10 @@ class DetailViewController: UIViewController, Injectable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configuration()
+    }
+
+    private func configuration() {
+        navigationItem.title = presenter.navigationTitle
     }
 }

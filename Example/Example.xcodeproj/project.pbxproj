@@ -101,6 +101,7 @@
 				0334EE40241CB063006CB26A /* Detail.storyboard */,
 				0334EE42241CB0CD006CB26A /* DetailViewController.swift */,
 				0334EE47241CB8F4006CB26A /* DetailPresenter.swift */,
+				0334EE4D241CC344006CB26A /* View */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -119,6 +120,13 @@
 				0334EE4B241CBA4F006CB26A /* Injectable.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		0334EE4D241CC344006CB26A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0382E0FB23B2DD8900C1AD3F = {
