@@ -15,6 +15,9 @@
 		0334EE43241CB0CD006CB26A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334EE42241CB0CD006CB26A /* DetailViewController.swift */; };
 		0334EE48241CB8F4006CB26A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334EE47241CB8F4006CB26A /* DetailPresenter.swift */; };
 		0334EE4C241CBA4F006CB26A /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334EE4B241CBA4F006CB26A /* Injectable.swift */; };
+		0334EE4F241CCA66006CB26A /* BenchmarkResultComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334EE4E241CCA66006CB26A /* BenchmarkResultComponent.swift */; };
+		0334EE51241CCA75006CB26A /* BenchmarkResultComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0334EE50241CCA75006CB26A /* BenchmarkResultComponent.xib */; };
+		0334EE53241CCD19006CB26A /* NSObject+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0334EE52241CCD19006CB26A /* NSObject+Extention.swift */; };
 		0382E10823B2DD8900C1AD3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0382E10723B2DD8900C1AD3F /* AppDelegate.swift */; };
 		0382E10A23B2DD8900C1AD3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0382E10923B2DD8900C1AD3F /* SceneDelegate.swift */; };
 		0382E10E23B2DD8A00C1AD3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0382E10D23B2DD8A00C1AD3F /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 		0334EE42241CB0CD006CB26A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0334EE47241CB8F4006CB26A /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		0334EE4B241CBA4F006CB26A /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		0334EE4E241CCA66006CB26A /* BenchmarkResultComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkResultComponent.swift; sourceTree = "<group>"; };
+		0334EE50241CCA75006CB26A /* BenchmarkResultComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BenchmarkResultComponent.xib; sourceTree = "<group>"; };
+		0334EE52241CCD19006CB26A /* NSObject+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extention.swift"; sourceTree = "<group>"; };
 		0382E10423B2DD8900C1AD3F /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0382E10723B2DD8900C1AD3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0382E10923B2DD8900C1AD3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				0334EE4B241CBA4F006CB26A /* Injectable.swift */,
+				0334EE52241CCD19006CB26A /* NSObject+Extention.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -125,6 +132,8 @@
 		0334EE4D241CC344006CB26A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0334EE4E241CCA66006CB26A /* BenchmarkResultComponent.swift */,
+				0334EE50241CCA75006CB26A /* BenchmarkResultComponent.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,6 +251,7 @@
 				0382E11123B2DD8A00C1AD3F /* Preview Assets.xcassets in Resources */,
 				0382E10E23B2DD8A00C1AD3F /* Assets.xcassets in Resources */,
 				0334EE41241CB063006CB26A /* Detail.storyboard in Resources */,
+				0334EE51241CCA75006CB26A /* BenchmarkResultComponent.xib in Resources */,
 				0334EE37241CA357006CB26A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +271,8 @@
 				0334EE3F241CA913006CB26A /* DataSource.swift in Sources */,
 				0334EE48241CB8F4006CB26A /* DetailPresenter.swift in Sources */,
 				0382E10A23B2DD8900C1AD3F /* SceneDelegate.swift in Sources */,
+				0334EE53241CCD19006CB26A /* NSObject+Extention.swift in Sources */,
+				0334EE4F241CCA66006CB26A /* BenchmarkResultComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
