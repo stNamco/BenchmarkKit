@@ -15,8 +15,9 @@ struct Subject: Resource {
 
     let title: String
     let description: String
+    let code: String
 }
 
 private let resource: [Subject] = [
-    Subject(title: "文字列結合の処理時間", description: "文字列結合の処理時間")
+    Subject(title: "文字列結合の処理時間", description: "+ 演算子を使う方法", code: "func join1() { text = \"これは\" + \"テスト\" + \"です\"}")
 ]

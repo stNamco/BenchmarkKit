@@ -16,6 +16,8 @@ protocol DetailInput {
 
 protocol DetailOutput {
     var navigationTitle: String { get }
+    var codeDescription: String { get }
+    var excutedCode: String { get }
 }
 
 private typealias Presenter = DetailInput & DetailOutput
@@ -23,8 +25,12 @@ private typealias Presenter = DetailInput & DetailOutput
 final class DetailPresenter: Presenter {
 
     let navigationTitle: String
+    let codeDescription: String
+    let excutedCode: String
 
     init(dependency: DetailViewController.Dependency) {
         self.navigationTitle = dependency.title
+        self.codeDescription = dependency.description
+        self.excutedCode = dependency.code
     }
 }

@@ -10,7 +10,16 @@ import UIKit
 
 final class BenchmarkResultComponent: UIView {
 
+    struct Model {
+        let title: String
+        let code: String
+        let processingTime: Double
+    }
+
     @IBOutlet private var contentView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var excutedCodeTextView: UITextView!
+    @IBOutlet weak var processingTimeLabel: UILabel!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -38,15 +47,21 @@ final class BenchmarkResultComponent: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        initializeUI()
+        initialize()
     }
 
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        initializeUI()
+        initialize()
     }
 
-    private func initializeUI() {
+    private func initialize() {
 
+    }
+
+    func setAppearance(model: Model) {
+        titleLabel.text = model.title
+        excutedCodeTextView.text = model.code
+        processingTimeLabel.text = "result: \(model.processingTime)"
     }
 }
